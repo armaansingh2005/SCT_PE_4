@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        InterviewMate AI
+    </title>
+
+    <meta
+        name="description"
+        content="Persona Driven Interview Assistant">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+
+    <div class="background">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- Theme Button -->
+
+    <button
+        id="themeToggle"
+        class="theme-toggle">
+
+        🌙
+
+    </button>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+
+                    AI
+
+                </div>
+
+                <div>
+
+                    <h2>
+                        InterviewMate
+                    </h2>
+
+                    <p>
+                        HR Assistant
+                    </p>
+
+                </div>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a
+                            href="#dashboard"
+                            class="nav-link active">
+
+                            📊 Dashboard
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#interviewLab"
+                            class="nav-link">
+
+                            🎯 Interview Lab
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#conversationSection"
+                            class="nav-link">
+
+                            💬 Conversation
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#historySection"
+                            class="nav-link">
+
+                            🕒 History
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#documentationSection"
+                            class="nav-link">
+
+                            📄 Documentation
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="sidebar-footer">
+
+                <h4>
+                    Prompt Flow
+                </h4>
+
+                <div class="flow-item">
+                    Candidate Profile ✓
+                </div>
+
+                <div class="flow-item">
+                    Question Generation ✓
+                </div>
+
+                <div class="flow-item">
+                    Answer Evaluation ✓
+                </div>
+
+                <div class="flow-item">
+                    Follow-Up Question ✓
+                </div>
+
+                <div class="flow-item">
+                    Final Assessment ✓
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- Hero Section -->
+
+            <section
+                id="dashboard"
+                class="hero">
+
+                <div class="hero-card">
+
+                    <div class="hero-left">
+
+                        <h1>
+                            InterviewMate AI
+                        </h1>
+
+                        <p>
+
+                            A Persona-Driven Interview Assistant
+                            built using Prompt Chaining and
+                            Multi-Turn Dialogue Simulation.
+
+                        </p>
+
+                    </div>
+
+                    <div class="hero-right">
+
+                        <div class="persona-card">
+
+                            <h3>
+                                Recruiter Persona
+                            </h3>
+
+                            <h2>
+                                Sarah Johnson
+                            </h2>
+
+                            <p>
+                                Senior Technical Recruiter
+                            </p>
+
+                            <span>
+                                Professional • Friendly • Analytical
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Analytics -->
+
+            <section
+                class="analytics-grid">
+
+                <div class="analytics-card">
+
+                    <h4>
+                        Interview Stage
+                    </h4>
+
+                    <h2
+                        id="currentStage">
+
+                        Profile Collection
+
+                    </h2>
+
+                </div>
+
+                <div class="analytics-card">
+
+                    <h4>
+                        Communication
+                    </h4>
+
+                    <h2
+                        id="communicationScore">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div class="analytics-card">
+
+                    <h4>
+                        Technical
+                    </h4>
+
+                    <h2
+                        id="technicalScore">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div class="analytics-card">
+
+                    <h4>
+                        Confidence
+                    </h4>
+
+                    <h2
+                        id="confidenceScore">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+            </section>
+
+            <!-- Interview Lab -->
+
+            <section
+                id="interviewLab"
+                class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Interview Setup
+                    </h2>
+
+                    <p>
+
+                        Enter candidate details to
+                        begin the interview process.
+
+                    </p>
+
+                </div>
+
+                <div class="candidate-grid">
+
+                    <div class="form-group">
+
+                        <label>
+                            Candidate Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="candidateName"
+                            placeholder="Enter your name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+                            Desired Role
+                        </label>
+
+                        <input
+                            type="text"
+                            id="candidateRole"
+                            placeholder="Frontend Developer">
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Skills
+                    </label>
+
+                    <textarea
+                        id="candidateSkills"
+                        placeholder="Java, HTML, CSS, JavaScript, React"></textarea>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button
+                        id="startInterviewBtn">
+
+                        Start Interview
+
+                    </button>
+
+                    <button
+                        id="resetInterviewBtn">
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+            </section>
+
+                        <!-- Conversation Section -->
+
+            <section
+                id="conversationSection"
+                class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Interview Conversation
+                    </h2>
+
+                    <p>
+                        Multi-turn dialogue between the
+                        candidate and Sarah Johnson.
+                    </p>
+
+                </div>
+
+                <div class="conversation-layout">
+
+                    <!-- Chat Area -->
+
+                    <div class="chat-panel">
+
+                        <div
+                            id="chatContainer"
+                            class="chat-container">
+
+                            <div class="message recruiter">
+
+                                <div class="avatar">
+
+                                    SJ
+
+                                </div>
+
+                                <div class="message-content">
+
+                                    <h4>
+                                        Sarah Johnson
+                                    </h4>
+
+                                    <p>
+
+                                        Hello! I'm Sarah Johnson,
+                                        Senior Technical Recruiter.
+
+                                        Please enter your profile
+                                        details and click
+                                        "Start Interview"
+                                        to begin.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- User Input -->
+
+                        <div class="chat-input-area">
+
+                            <textarea
+                                id="userMessage"
+                                placeholder="Type your answer here..."
+                                rows="4"></textarea>
+
+                            <button
+                                id="sendMessageBtn">
+
+                                Send Answer
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Evaluation Panel -->
+
+                    <div class="evaluation-panel">
+
+                        <div class="evaluation-card">
+
+                            <h3>
+                                Candidate Evaluation
+                            </h3>
+
+                            <div class="score-item">
+
+                                <span>
+                                    Communication
+                                </span>
+
+                                <span
+                                    id="communicationValue">
+
+                                    0/10
+
+                                </span>
+
+                            </div>
+
+                            <div class="score-bar">
+
+                                <div
+                                    id="communicationBar"
+                                    class="score-fill">
+                                </div>
+
+                            </div>
+
+                            <div class="score-item">
+
+                                <span>
+                                    Technical Accuracy
+                                </span>
+
+                                <span
+                                    id="technicalValue">
+
+                                    0/10
+
+                                </span>
+
+                            </div>
+
+                            <div class="score-bar">
+
+                                <div
+                                    id="technicalBar"
+                                    class="score-fill">
+                                </div>
+
+                            </div>
+
+                            <div class="score-item">
+
+                                <span>
+                                    Confidence
+                                </span>
+
+                                <span
+                                    id="confidenceValue">
+
+                                    0/10
+
+                                </span>
+
+                            </div>
+
+                            <div class="score-bar">
+
+                                <div
+                                    id="confidenceBar"
+                                    class="score-fill">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Current Prompt -->
+
+                        <div class="evaluation-card">
+
+                            <h3>
+                                Current Prompt Stage
+                            </h3>
+
+                            <div
+                                id="promptStageCard"
+                                class="stage-box">
+
+                                Waiting to start interview
+
+                            </div>
+
+                        </div>
+
+                        <!-- Progress Tracker -->
+
+                        <div class="evaluation-card">
+
+                            <h3>
+                                Interview Progress
+                            </h3>
+
+                            <div class="progress-wrapper">
+
+                                <div class="progress-bar">
+
+                                    <div
+                                        id="interviewProgress"
+                                        class="progress-fill">
+                                    </div>
+
+                                </div>
+
+                                <span
+                                    id="progressText">
+
+                                    0%
+
+                                </span>
+
+                            </div>
+
+                            <ul class="progress-list">
+
+                                <li id="step1">
+                                    Candidate Profile
+                                </li>
+
+                                <li id="step2">
+                                    Question Generation
+                                </li>
+
+                                <li id="step3">
+                                    Answer Evaluation
+                                </li>
+
+                                <li id="step4">
+                                    Follow-Up Question
+                                </li>
+
+                                <li id="step5">
+                                    Final Recommendation
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Sample Conversation -->
+
+            <section
+                class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Sample Conversation Flow
+                    </h2>
+
+                    <p>
+                        Demonstrates how the assistant
+                        adapts across turns.
+                    </p>
+
+                </div>
+
+                <div class="sample-grid">
+
+                    <div class="sample-card">
+
+                        <h3>
+                            Turn 1
+                        </h3>
+
+                        <p>
+
+                            Candidate shares profile
+                            information.
+
+                        </p>
+
+                    </div>
+
+                    <div class="sample-card">
+
+                        <h3>
+                            Turn 2
+                        </h3>
+
+                        <p>
+
+                            Assistant generates a
+                            role-specific question.
+
+                        </p>
+
+                    </div>
+
+                    <div class="sample-card">
+
+                        <h3>
+                            Turn 3
+                        </h3>
+
+                        <p>
+
+                            Candidate answers and
+                            receives evaluation.
+
+                        </p>
+
+                    </div>
+
+                    <div class="sample-card">
+
+                        <h3>
+                            Turn 4
+                        </h3>
+
+                        <p>
+
+                            Follow-up question is
+                            generated dynamically.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+                        <!-- History Section -->
+
+            <section
+                id="historySection"
+                class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Interview History
+                    </h2>
+
+                    <p>
+                        Previous interview sessions are stored locally
+                        and can be reviewed later.
+                    </p>
+
+                </div>
+
+                <div
+                    id="historyContainer"
+                    class="history-container">
+
+                    <div class="empty-history">
+
+                        No interview history available.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Documentation Section -->
+
+            <section
+                id="documentationSection"
+                class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Assistant Flow Documentation
+                    </h2>
+
+                    <p>
+                        Step-by-step explanation of the persona-driven
+                        interview assistant workflow.
+                    </p>
+
+                </div>
+
+                <div class="documentation-grid">
+
+                    <div class="doc-card">
+
+                        <h3>
+                            Step 1
+                        </h3>
+
+                        <h4>
+                            Candidate Profile Collection
+                        </h4>
+
+                        <p>
+
+                            Collects candidate information such as
+                            name, role and skills.
+
+                        </p>
+
+                    </div>
+
+                    <div class="doc-card">
+
+                        <h3>
+                            Step 2
+                        </h3>
+
+                        <h4>
+                            Question Generation
+                        </h4>
+
+                        <p>
+
+                            Generates role-specific interview questions
+                            using candidate skills.
+
+                        </p>
+
+                    </div>
+
+                    <div class="doc-card">
+
+                        <h3>
+                            Step 3
+                        </h3>
+
+                        <h4>
+                            Answer Evaluation
+                        </h4>
+
+                        <p>
+
+                            Evaluates technical accuracy,
+                            communication and confidence.
+
+                        </p>
+
+                    </div>
+
+                    <div class="doc-card">
+
+                        <h3>
+                            Step 4
+                        </h3>
+
+                        <h4>
+                            Follow-Up Prompt
+                        </h4>
+
+                        <p>
+
+                            Adapts future questions using previous
+                            candidate responses.
+
+                        </p>
+
+                    </div>
+
+                    <div class="doc-card">
+
+                        <h3>
+                            Step 5
+                        </h3>
+
+                        <h4>
+                            Final Recommendation
+                        </h4>
+
+                        <p>
+
+                            Generates strengths, weaknesses and
+                            hiring recommendation.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Prompt Chain Diagram -->
+
+                <div class="flow-diagram">
+
+                    <h3>
+                        Prompt Chaining Workflow
+                    </h3>
+
+                    <div class="diagram">
+
+                        <div class="diagram-step">
+                            Candidate Profile
+                        </div>
+
+                        <div class="diagram-arrow">
+                            →
+                        </div>
+
+                        <div class="diagram-step">
+                            Question Generation
+                        </div>
+
+                        <div class="diagram-arrow">
+                            →
+                        </div>
+
+                        <div class="diagram-step">
+                            Evaluation
+                        </div>
+
+                        <div class="diagram-arrow">
+                            →
+                        </div>
+
+                        <div class="diagram-step">
+                            Follow-Up
+                        </div>
+
+                        <div class="diagram-arrow">
+                            →
+                        </div>
+
+                        <div class="diagram-step">
+                            Recommendation
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Iteration Improvements -->
+
+            <section class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Prompt Iteration & Improvements
+                    </h2>
+
+                    <p>
+                        Enhancements made to improve consistency
+                        and conversational quality.
+                    </p>
+
+                </div>
+
+                <div class="improvements-grid">
+
+                    <div class="improvement-card">
+
+                        <h3>
+                            Version 1
+                        </h3>
+
+                        <p>
+
+                            Simple question generation.
+
+                        </p>
+
+                        <span>
+                            Issue: Inconsistent responses
+                        </span>
+
+                    </div>
+
+                    <div class="improvement-card">
+
+                        <h3>
+                            Version 2
+                        </h3>
+
+                        <p>
+
+                            Role-specific interview prompts.
+
+                        </p>
+
+                        <span>
+                            Issue: Weak evaluation logic
+                        </span>
+
+                    </div>
+
+                    <div class="improvement-card">
+
+                        <h3>
+                            Version 3
+                        </h3>
+
+                        <p>
+
+                            Structured scoring, context retention
+                            and adaptive follow-ups.
+
+                        </p>
+
+                        <span>
+                            Result: Consistent dialogue flow
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Report Generator -->
+
+            <section class="glass-card">
+
+                <div class="section-header">
+
+                    <h2>
+                        Interview Report
+                    </h2>
+
+                    <p>
+                        Generate a complete interview summary report.
+                    </p>
+
+                </div>
+
+                <div class="report-section">
+
+                    <button
+                        id="generateReportBtn"
+                        class="report-btn">
+
+                        Generate Interview Report
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+
+            <footer class="footer">
+
+                <div class="footer-content">
+
+                    <h3>
+                        InterviewMate AI
+                    </h3>
+
+                    <p>
+                        Persona-Driven Interview Assistant
+                    </p>
+
+                    <p>
+                        Built with HTML, CSS and JavaScript
+                    </p>
+
+                    <span>
+                        Internship Level Prompt Engineering Project
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
